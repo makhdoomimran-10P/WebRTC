@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebRTC App</title>
+  <script src="index.js" defer></script>
+  <style>
+    video {
+      border: 1px solid lightgray;
+      width: 100%;
+      margin-top: .5rem;
+    }
+    video:first-child {
+      margin-right: 1rem;
+    }
+    #streams {
+      display: flex;
+    }
+  </style>
+</head>
+<body>
+  <button id="call">Call</button>
+  <button id="answer">Answer</button>
+  <section id="streams">
+    <video src="" id="localStream" muted autoplay playsinline></video>
+    <video src="" id="remoteStream" muted autoplay playsinline></video>
+  </section>
+</body>
+</html>
